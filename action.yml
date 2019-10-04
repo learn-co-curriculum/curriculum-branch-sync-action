@@ -1,12 +1,12 @@
 name: Curriculum Branch Sync
-on:
-  push:
-    branches:
-      - curriculum
-jobs:
-  run:
-    runs-on: ubuntu-latest
-
+# on:
+#   push:
+#     branches:
+#       - curriculum
+# jobs:
+#   run:
+#     runs-on: ubuntu-latest
+runs:
     steps:
     - uses: actions/checkout@v1
     - name: Set up Python
