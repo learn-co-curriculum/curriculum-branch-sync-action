@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM jupyter/base-notebook
+FROM alpine:lastes
 
 COPY . /app
 
