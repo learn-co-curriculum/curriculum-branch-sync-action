@@ -3,4 +3,3 @@ author: 'Alex Griffith'
 description: 'Automatically creates & pushes master and solution content after the curriculum branch notebook is updated'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
