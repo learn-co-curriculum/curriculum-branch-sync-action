@@ -1,1 +1,3 @@
-echo "BLAHHHHHHHHHH!!!"
+#!/bin/sh
+
+echo "Hello"
