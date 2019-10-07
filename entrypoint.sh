@@ -1,12 +1,9 @@
 #!/bin/sh
-echo "hkjfasdfkjdsfjdfsj"
-# - name: Add Markdown Readme to Curriculum Branch
-#   run: |
-#     git checkout --track origin/curriculum
-#     jupyter nbconvert index.ipynb --to markdown
-#     mv index.md README.md
-#     echo `git add . && git commit -m "$(git log -1 --pretty=%s)"` #wrapped in echo so exits with 0 (success) status code
-#     echo `git push origin curriculum`
+git checkout --track origin/curriculum
+jupyter nbconvert index.ipynb --to markdown
+mv index.md README.md
+echo `git add . && git commit -m "$(git log -1 --pretty=%s)"` #wrapped in echo so exits with 0 (success) status code
+echo `git push origin curriculum`
 #
 # - name: Create New Master Notebook
 #   run: |
