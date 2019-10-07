@@ -1,4 +1,5 @@
 FROM alpine:latest
+FROM jupyter/base-notebook
 
 COPY . /app
 
