@@ -1,5 +1,4 @@
-FROM alpine:latest
-FROM jupyter/base-notebook
+FROM python:3.7-slim-buster
 
 COPY . /app
 
