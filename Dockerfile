@@ -2,6 +2,8 @@ FROM jupyter/base-notebook
 COPY . /app
 WORKDIR /app
 
-RUN chmod +x ./entrypoint.sh
+USER root
+RUN ls
+RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
